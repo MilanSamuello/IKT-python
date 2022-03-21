@@ -3,7 +3,7 @@ ablak1 = Tk()
 gyoker = 'H:\\Python IKT\\'
 ablak1.geometry('600x600')
 ablak1.title('IKT Tkinter')
-icon = PhotoImage(file='H:\Python IKT\sus.png')
+icon = PhotoImage(file='D:\IKT python projects\IKT-python\sus.png')
 ablak1.iconphoto(True, icon)
 ablak1.config(background="black")
 elsokep = PhotoImage(file=  gyoker+'fire.png')

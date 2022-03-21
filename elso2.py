@@ -25,7 +25,7 @@ mezo3.pack()
 
 
 can1 = Canvas(foablak, width = 460, height = 460, bg = "white")
-photo = PhotoImage(file = 'H:\\Python IKT\\viktor.png')
+photo = PhotoImage(file = 'D:\IKT python projects\IKT-python\sus.png')
 item = can1.create_image(80,80, image = photo)
 can1.pack()
 

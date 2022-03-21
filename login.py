@@ -1,12 +1,31 @@
 from tkinter import *
-ablak1 = Tk()
-gyoker = 'H:\\Python IKT\\'
-ablak1.geometry('600x600')
-ablak1.title('IKT Tkinter')
-icon = PhotoImage(file='D:\IKT python projects\IKT-python\tkinter_black.png')
-ablak1.iconphoto(True, icon)
-ablak1.config(background="black")
-elsokep = PhotoImage(file=  gyoker+'siraly.png')
+def osszeg():
+    a = int(mezo1.get())
+    b = int(mezo2.get())
+    c = a + b
+    mezo3.delete(0, END)
+    mezo3.insert(0, "Összeg: "+str(c))
+foablak=Tk()
+cimke=Label(foablak, text="Első mező:", fg="black")
+cimke.pack()
+mezo1=Entry(foablak)
+mezo1.pack()
+cimke=Label(foablak, text="Második:", fg="black")
+cimke.pack()
+
+mezo2=Entry(foablak)
+mezo2.pack()
+cimke=Label(foablak, text="Harmadik:", fg="black")
+cimke.pack()
+mezo3=Entry(foablak)
+mezo3.pack()
 
 
-ablak1.mainloop()
+can1 = Canvas(foablak, width = 460, height = 460, bg = "white")
+photo = PhotoImage(file = 'D:\IKT python projects\IKT-python\light.png')
+item = can1.create_image(240,240, image = photo)
+
+can1.pack()
+
+
+foablak.mainloop()

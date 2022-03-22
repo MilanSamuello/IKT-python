@@ -17,7 +17,7 @@ cimke = Label(ablak1,
              padx=45,
              pady=30,
              image=elsokep,
-             compound='center'
+             compound='right'
             ).pack()
 
 ablak1.mainloop()

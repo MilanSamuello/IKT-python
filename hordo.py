@@ -7,13 +7,11 @@ def osszeg():
     d = 3.14 * b * b * c 
     x = d / 100
     mezo4.delete(0, END)
-    mezo4.insert(0, str(x)+" liter")
-
-
+    mezo4.insert(0, str(round(x))+" liter")
     
     s = d / a
     mezo5.delete(0, END)
-    mezo5.insert(0, str(s)+" bor")
+    mezo5.insert(0, str(round(s))+" bor")
     mezo6.delete(0, END)
     mezo6.insert(0, str()+" igen")
 

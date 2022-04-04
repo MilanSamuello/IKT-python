@@ -9,7 +9,7 @@ def osszeg():
     mezo4.delete(0, END)
     mezo4.insert(0, str(round(x))+" liter")
     
-    s = d / a
+    s = d / a / 50
     mezo5.delete(0, END)
     mezo5.insert(0, str(round(s))+" bor")
     mezo6.delete(0, END)
